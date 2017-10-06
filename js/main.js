@@ -35,11 +35,12 @@ mv.app.load = function () {
     var nowNum = document.querySelector('.nowNum');
 
     var arr = ['images/music.jpg', 'images/news.png', 'images/weather1.png', 'images/weather2.png']
-    var oImg = new Image();
+  
     var num = 0;
 
     loading()
     function loading() {
+        var oImg = new Image();
         oImg.src = arr[num];
         oImg.addEventListener('load', function () {
                 if (num > arr.length - 1) {
