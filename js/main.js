@@ -65,7 +65,6 @@ mv.tool.autoChange = function (obj, dir, now) {
             obj.addEventListener('webkitTransitionEnd', function () {
                 if (off) {
                     off = false;
-                    console.log(num)
                     obj.style.transition = '0s';
                     css(el[0], translate[dir], 0);
                     css(obj, translate[dir], 0);
