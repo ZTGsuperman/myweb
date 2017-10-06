@@ -23,7 +23,7 @@ window.onload = function () {
     github.addEventListener('touchstart', function () {
         window.location.href = this.href;
     })
-   // mv.app.load()
+    mv.app.load()
 }
 var mv = {};
 mv.tool = {}
@@ -185,7 +185,13 @@ mv.app.clickAutoImg = function () {
                     mv.tool.autoChange(list, 'x', _this.index)
                 }, 4000)
         })
+    }
 
+    var link = list.querySelectorAll('.link');
+    for (var i = 0; i < link.length; i++) {
+        mv.tool.tab(link[i], function () {
+            window.location.href = this.href;
+        })
     }
 
 }
