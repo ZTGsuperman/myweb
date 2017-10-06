@@ -53,8 +53,8 @@ mv.app.load = function () {
                     nowNum.innerHTML = (num / (arr.length - 1)).toFixed(1) * 100 + '%';
                     loading()
                 }
+                num++;
           })
-        num++;
     }
    
 }
