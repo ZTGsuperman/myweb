@@ -34,7 +34,7 @@ mv.app.load = function () {
     var load=document.querySelector('.load')
     var nowNum = document.querySelector('.nowNum');
 
-    var arr = ['images/music.jpg', 'images/news.png', 'images/weather1.png', 'images/weather2.png']
+    var arr = ['images/music.png', 'images/news.png', 'images/weather1.png', 'images/weather2.png']
   
     var num = 0;
 
