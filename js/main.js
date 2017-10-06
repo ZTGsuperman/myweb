@@ -23,7 +23,7 @@ window.onload = function () {
     github.addEventListener('touchstart', function () {
         window.location.href = this.href;
     })
-    mv.app.load()
+   // mv.app.load()
 }
 var mv = {};
 mv.tool = {}
