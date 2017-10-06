@@ -48,15 +48,12 @@ mv.app.load = function () {
                         load.style.display = 'none';
                     }, 900)
                 } else {
+                    console.log( )
                     nowNum.innerHTML = (num / (arr.length - 1)).toFixed(1) * 100 + '%';
                     loading()
                 }
           })
         num++;
-
-        oImg.addEventListener('error', function () {
-            num++;
-        })
     }
    
 }
