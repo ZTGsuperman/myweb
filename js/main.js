@@ -81,7 +81,7 @@ mv.app.clickNav = function () {
     var menuList = menu.querySelector('#menu_list');
     var a = menuList.getElementsByTagName('a');
     var home = menu.querySelector('#home');
-    var r = -60;
+    var r = -8;
     var aLength=a.length
 
     var btnOff = true;
