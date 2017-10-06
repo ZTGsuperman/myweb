@@ -110,11 +110,11 @@ function clickNav() {
 
      for (var i = 0; i < aLength; i++) {
          a[i].addEventListener('touchstart', function () {
-             this.style.transition = '0.2s ease-in'
+             this.style.transition = '0.4s ease-in'
              css(this, 'scale', 150);
          })
          a[i].addEventListener('touchend', function () {
-             this.style.transition = '0.2s ease-out'
+             this.style.transition = '0.4s ease-out'
              css(this, 'scale', 100);
              window.location.href = this.href;
          })
