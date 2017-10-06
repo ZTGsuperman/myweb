@@ -9,7 +9,7 @@ window.onload = function () {
     var iLength = oLi.length;
 
     css(list,'width',iLength*oLi[0].offsetWidth)
-
+    css(list,'translateZ',0.1)
     for (var i = 0; i < iLength; i++) {
         css(oLi[i],'translateX',i*oLi[0].offsetWidth)
     }
@@ -17,7 +17,12 @@ window.onload = function () {
     mv.tool.autoChange(list,'x',0)
     mv.app.clickNav();
     mv.app.clickAutoImg();
-   // mv.app.moveUl();
+    // mv.app.moveUl();
+
+    var github = document.querySelector('.github');
+    github.addEventListener('touchstart', function () {
+        window.location.href = this.href;
+    })
 }
 var mv = {};
 mv.tool = {}

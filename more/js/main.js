@@ -9,6 +9,12 @@ window.onload = function () {
 
     var oLength = oLi.length;
 
+
+    var github = document.querySelector('.github');
+    github.addEventListener('touchstart', function () {
+        window.location.href = this.href;
+    })
+
     var lastPoint = 0;
     var dis = 0;
 

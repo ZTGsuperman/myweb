@@ -19,6 +19,7 @@ window.onload = function () {
     var lastIndex = 0;
     var isFrist = true;
     for (var i = 0; i < pLength; i++) {
+        css(page[i],'translateZ',0.01)
         page[i].index = i;
         page[i].addEventListener('touchstart', function (ev) {
             var touch = ev.changedTouches[0];
