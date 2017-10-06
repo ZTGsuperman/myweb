@@ -112,6 +112,7 @@ mv.app.clickNav = function () {
         a[i].addEventListener('touchend', function () {
             this.style.transition = '0.2s ease-out'
             css(this, 'scale', 100);
+            window.location.href = this.href;
         })
     }
 
