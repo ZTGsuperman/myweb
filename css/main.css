@@ -71,6 +71,57 @@ body {
   border-radius: 0;
   width: 100%;
 }
+@-webkit-keyframes load {
+  0% {
+    -webkit-transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(-15px);
+  }
+}
+.load {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: fixed;
+  z-index: 5;
+  text-align: center;
+  transition: 0.8s;
+  -webkit-animation: 0.8s;
+}
+.loading {
+  margin-top: 50%;
+  margin-left: 20%;
+}
+.load .nowNum {
+  color: red;
+  font-size: 0.66666667rem;
+}
+.load span {
+  float: left;
+  font-size: 0.8rem;
+  -webkit-animation-play-state: running;
+}
+.load span:nth-of-type(1) {
+  color: #C06;
+  -webkit-animation: 0.8s load alternate infinite;
+}
+.load span:nth-of-type(2) {
+  color: #3CF;
+  -webkit-animation: 0.8s 0.1s load alternate infinite;
+}
+.load span:nth-of-type(3) {
+  color: #C6C;
+  -webkit-animation: 0.8s 0.2s load alternate infinite;
+}
+.load span:nth-of-type(4) {
+  color: #369;
+  -webkit-animation: 0.8s 0.3s load alternate infinite;
+}
+.load span:nth-of-type(5) {
+  color: #6F9;
+  -webkit-animation: 0.8s 0.4s load alternate infinite;
+}
 #box {
   width: 100%;
   height: 100%;

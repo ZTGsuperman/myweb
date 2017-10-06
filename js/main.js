@@ -23,11 +23,43 @@ window.onload = function () {
     github.addEventListener('touchstart', function () {
         window.location.href = this.href;
     })
+    mv.app.load()
 }
 var mv = {};
 mv.tool = {}
 mv.app = {}
 
+
+mv.app.load = function () {
+    var load=document.querySelector('.load')
+    var nowNum = document.querySelector('.nowNum');
+
+    var arr = ['images/music.jpg', 'images/news.png', 'images/weather1.png', 'images/weather2.png']
+    var oImg = new Image();
+    var num = 0;
+
+    loading()
+    function loading() {
+        oImg.src = arr[num];
+        oImg.addEventListener('load', function () {
+                if (num > arr.length - 1) {
+                    css(load, 'opacity',0);
+                    setTimeout(function () {
+                        load.style.display = 'none';
+                    }, 900)
+                } else {
+                    nowNum.innerHTML = (num / (arr.length - 1)).toFixed(1) * 100 + '%';
+                    loading()
+                }
+          })
+        num++;
+
+        oImg.addEventListener('error', function () {
+            num++;
+        })
+    }
+   
+}
 mv.tool.autoChange = function (obj, dir, now) {
     var el = obj.children;
     var length = el.length;
