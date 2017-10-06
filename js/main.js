@@ -42,18 +42,18 @@ mv.app.load = function () {
     function loading() {
         var oImg = new Image();
         oImg.src = arr[num];
-        oImg.addEventListener('load', function () {
-                if (num > arr.length - 1) {
-                    css(load, 'opacity',0);
-                    setTimeout(function () {
-                        load.style.display = 'none';
-                    }, 900)
-                } else {
-                    nowNum.innerHTML = (num / (arr.length - 1)).toFixed(1) * 100 + '%';
-                    loading()
-                }
-                num++;
-          })
+        oImg.onload = function () {
+            if (num > arr.length - 1) {
+                css(load, 'opacity', 0);
+                setTimeout(function () {
+                    load.style.display = 'none';
+                }, 900)
+            } else {
+                nowNum.innerHTML = (num / (arr.length - 1)).toFixed(1) * 100 + '%';
+                loading()
+            }
+            num++;
+        }
     }
    
 }

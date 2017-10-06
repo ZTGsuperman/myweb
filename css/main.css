@@ -73,10 +73,10 @@ body {
 }
 @-webkit-keyframes load {
   0% {
-    -webkit-transform: translateY(0px);
+    -webkit-transform: translateY(0px) translateZ(0.1px);
   }
   100% {
-    -webkit-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px) translateZ(0.1px);
   }
 }
 .load {
