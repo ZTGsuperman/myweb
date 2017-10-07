@@ -13,7 +13,7 @@ window.onload = function () {
     for (var i = 0; i < iLength; i++) {
         css(oLi[i],'translateX',i*oLi[0].offsetWidth)
     }
-
+    mv.app.load()
     mv.tool.autoChange(list,'x',0)
     mv.app.clickNav();
     mv.app.clickAutoImg();
@@ -23,18 +23,19 @@ window.onload = function () {
     github.addEventListener('touchstart', function () {
         window.location.href = this.href;
     })
-    mv.app.load()
+  
 }
 var mv = {};
 mv.tool = {}
 mv.app = {}
 
 
+
 mv.app.load = function () {
     var load=document.querySelector('.load')
     var nowNum = document.querySelector('.nowNum');
 
-    var arr = ['images/music.png', 'images/news.png', 'images/weather1.png', 'images/weather2.png']
+    var arr = ['images/music.png', 'images/news.png', 'images/weather1.png', 'images/weather2.png','myMessage/image/1.jpg']
   
     var num = 0;
 

@@ -227,6 +227,7 @@ body {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg) rotateZ(45deg);
   height: 7rem;
+  width: 7rem;
   transform-origin: center center;
 }
 #box .list li p img {
