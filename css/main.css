@@ -206,8 +206,7 @@ body {
   transform-style: preserve-3d;
   transform: rotateY(180deg);
   height: 100%;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
+  /*backface-visibility:hidden; -webkit-backface-visibility: hidden;*/
 }
 #box .list li p {
   position: absolute;

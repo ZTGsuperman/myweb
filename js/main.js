@@ -187,7 +187,7 @@ mv.app.clickAutoImg = function () {
 
     var link = list.querySelectorAll('.link');
     for (var i = 0; i < link.length; i++) {
-        mv.tool.tab(link[i], function () {
+        link[i].addEventListener('touchstart', function () {
             window.location.href = this.href;
         })
     }
