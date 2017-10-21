@@ -17,7 +17,7 @@ window.onload = function () {
     mv.tool.autoChange(list,'x',0)
     mv.app.clickNav();
     mv.app.clickAutoImg();
-    // mv.app.moveUl();
+    mv.app.moveUl();
 
     var github = document.querySelector('.github');
     github.addEventListener('touchstart', function () {
