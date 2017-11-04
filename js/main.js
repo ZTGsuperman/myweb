@@ -33,12 +33,10 @@ mv.app = {}
 
 mv.app.load = function () {
     var load=document.querySelector('.load')
-    var nowNum = document.querySelector('.nowNum');
-
+    //var nowNum = document.querySelector('.nowNum');
     var arr = ['images/music.png', 'images/news.png', 'images/weather1.png', 'images/weather2.png','myMessage/image/1.jpg']
   
     var num = 0;
-
     loading()
     function loading() {
         var oImg = new Image();
@@ -50,7 +48,7 @@ mv.app.load = function () {
                     load.style.display = 'none';
                 }, 900)
             } else {
-                nowNum.innerHTML = (num / (arr.length - 1)) * 100 + '%';
+              //  nowNum.innerHTML = (num / (arr.length - 1)) * 100 + '%';
                 loading()
             }
             num++;
