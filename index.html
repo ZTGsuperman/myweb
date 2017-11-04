@@ -21,6 +21,12 @@
         document.addEventListener('touchstart', function (ev) {
             ev.preventDefault();
         })
+
+        var u = navigator.userAgent
+        var isAn= u.indexOf("Android") > -1 || u.indexOf("Adr") > -1;
+        if (!isAn) {
+              window.location.href='wrong.html'
+        }
     </script>
     <script src="js/main.js"></script>
 </head>
